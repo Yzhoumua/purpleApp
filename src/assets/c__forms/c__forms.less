@@ -1,0 +1,102 @@
+.c__forms_container{
+    padding: 50px 0;
+    justify-content: center;
+    .c__forms_content{
+        width: 62.5%;
+        height: 100%;
+        .c__forms_img{
+            width:35%;
+            height: 100%;
+            order: 2;
+            position: relative;
+            img{
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                margin: auto;
+            }
+        }
+        .c__forms_text{
+            width: 60%;
+            height: 100%;
+            order: 1;
+            h1{
+                color: #352961;
+                font-size: 3rem;
+            }
+            p{
+                margin-top: 20px;
+                color: gray;
+                line-height: 30px;
+            }
+            input{
+                height: 55px;
+                border: 1px solid #ced4da;
+                outline: none;
+                padding-left: 20px;
+                box-sizing: border-box;
+                font-size: 1.1rem;
+                border-radius: 5px;
+                width: 100%;
+                &:focus{
+                    border-color: #352961;
+                }
+            }
+            div{
+                margin-top: 20px;
+            }
+            textarea{
+                padding-top: 10px;
+                margin-top: 20px;
+                border: 1px solid #ced4da;
+                outline: none;
+                padding-left: 20px;
+                box-sizing: border-box;
+                font-size: 1.1rem;
+                border-radius: 5px;
+                width: 100%;
+                font-family: "微软雅黑";
+                resize: none;
+                &:focus{
+                    border-color: #352961;
+                }
+            }
+            a{
+                display: inline-block;
+                margin-top: 20px;
+                background-color: #352961;
+                text-align: center;
+                line-height: 50px;
+                width: 180px;
+                border-radius: 10xp;
+                color: #fff;
+                &:hover{
+                    background-color: #181131;
+                }
+            }
+        }
+    }
+}
+@media all and (max-width:980px) {
+    .c__forms_container{
+        padding: 50px 0;
+        justify-content: center;
+        .c__forms_content{
+            width: 100%;
+            flex-wrap: wrap;
+            .c__forms_img{
+                width: 100%;
+                order: 1;
+                img{
+                    position: static;
+                }
+            }
+            .c__forms_text{
+                width: 100%;
+                order: 2;
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.c__ImgExhibition{
+    position: relative;
+    transform: scale(1);
+        .c__ImgExhibitionHover{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #18122bb7;
+            text-align: center;
+            color: #fff;
+            padding-top: 100px;
+            box-sizing: border-box;
+            opacity: 0;
+           
+            p{
+                opacity: 0;
+                padding: 0 50px;
+                font-size: 3rem;
+                font-weight: bold;
+                transform: translateY(100px);
+            }
+            span{
+                display: inline-block;
+                transform: translateY(100px);
+                opacity: 0;
+                width: 100%;
+                height: 20%;
+                color: rgb(185, 185, 185);
+            }
+        }
+}
+.c__ImgExhibition:hover{
+    z-index: 2;
+    transform: scale(1.2);
+    .c__ImgExhibitionHover:hover{
+        opacity: 1;
+        p{
+            opacity: 1;
+            transform: translateY(0px);
+        }
+        span{
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+}

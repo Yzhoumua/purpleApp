@@ -1,0 +1,1 @@
+import "../assets/l__footer/l__footer.less";

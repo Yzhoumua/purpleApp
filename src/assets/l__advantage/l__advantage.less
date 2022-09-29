@@ -1,0 +1,85 @@
+.l__advantage{
+    height: auto;
+    padding: 40px 0;
+    justify-content: center;
+    .l__advantage_container{
+        margin-top:-15%;
+        width: 62.5%;
+        .l__advantage_container_item{
+            box-sizing: border-box;
+            background-color: #fff;
+            width: 100%;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 2px 2px 43px rgba(0, 0, 0, 0.171);
+            h1{
+                font-size: 1.5rem;
+            }
+            p{
+                margin: 10px 0;
+                line-height: 30px;
+                color: gray;
+            }
+            h2{
+                color: #352961;
+                font-size: 4rem;
+            }
+            .p_modification{
+                color: #352961;
+                font-size: 12px;
+                font-weight: 700;
+                margin: 0;
+            }
+            a{  
+                font-weight: bold;
+                margin-top: 30px;
+                width: 170px;
+                height: 50px;
+                text-align: center;
+                line-height: 50px;
+                border: 1px solid #352961;
+                color: #352961;
+                display: inline-block;
+                border-radius: 10px;
+                &:hover{
+                    background: #352961;
+                    color: #fff;
+                }
+            }
+        }
+        .item2{
+            transform: scale(1.1);
+            a{
+                border: 1px solid #dc3545;
+                color: #dc3545;
+                &:hover{
+                    border: 1px solid #dc3545;
+                    background: #dc3545;;
+                }
+            }
+        }
+    }
+}
+@media all and (max-width:1220px) {
+    .l__advantage{
+        .l__advantage_container{
+            margin-top:-15%;
+            .item2{
+                transform: scale(1);
+            }
+        }
+    }
+}
+@media all and (max-width:980px){
+    .l__advantage{
+        .l__advantage_container{
+            width: 100%;
+            margin: 0;
+            display:block;
+            .l__advantage_container_item{
+                margin-top: 20px;
+            }
+        }
+    }
+}

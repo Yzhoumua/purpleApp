@@ -1,0 +1,98 @@
+.l_footer{
+    width: 100%;
+    background-color: #f1f3f8;
+    padding: 40px 0;
+    flex-wrap: wrap;
+    .l_footer_container{
+        justify-content: space-between;
+        width: 62.5%;
+        h1{
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+        p{
+            line-height: 30px;
+            color: gray;
+        }
+        .l_footer_container_text{
+            width: 45%;
+        }
+        .l_footer_container_link{
+            width: 15%;
+            a{
+                display: block;
+                color: gray;
+                line-height: 30px;
+            }
+        }
+        .l_footer_container_lianxi{
+            width: 25%;
+            div{
+                margin-top: 10px;
+                input{
+                    width: 70%;
+                    border: 1px solid #495057;
+                    color: #495057;
+                    line-height:40px;
+                    padding-left: 20px;
+                    box-sizing: border-box;
+                    outline: none;
+                    &:focus{
+                        border-color: #352961;
+                    }
+                }
+                a{
+                    width:30%;
+                    display: block;
+                    height: 42px;
+                    background-color: #352961;
+                    color: #fff;
+                    line-height: 42px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .l__footer_about{
+        border-top: 1px solid rgb(209, 209, 209);
+        width: 62.5%;
+        padding: 20px 0;
+        margin-top: 40px;
+        text-align: center;
+        p{
+            color: gray;
+            font-size: 12px;
+        }
+    }
+}
+@media all and (max-width:557px) {
+    .l_footer{
+        width: 100%;
+        .l_footer_container{
+            justify-content: space-between;
+            width: 100%;
+            padding: 0 30px;
+            flex-wrap: wrap;
+            h1{
+                font-size: 1rem;
+                margin-bottom: 20px;
+            }
+            p{
+                line-height: 30px;
+                color: gray;
+            }
+            .l_footer_container_text{
+                width: 100%;
+                margin-top: 30px;
+            }
+            .l_footer_container_link{
+                width: 100%;
+                margin-top: 30px;
+            }
+            .l_footer_container_lianxi{
+                width: 100%;
+                margin-top: 30px;
+            }
+        }
+    }
+}

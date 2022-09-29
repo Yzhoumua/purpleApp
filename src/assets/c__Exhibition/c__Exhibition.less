@@ -1,0 +1,107 @@
+.c__Exhibition {
+    padding: 5rem 0;
+    height: 700px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 5rem;
+    .c__Exhibition_container_text_content {
+        align-self: center;
+        width: 62.5%;
+        height: auto;
+        height: 40%;
+
+        .c__Exhibition_container_text {
+            width: 100%;
+
+            h1 {
+                font-size: 3rem;
+                color: #352961;
+                margin-bottom: 20px;
+            }
+
+            p {
+                color: gray;
+                line-height: 30px;
+            }
+        }
+    }
+    .c__Exhibition_container_img_container {
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+        height: 70%;
+        align-items: center;
+        .c__Exhibition_container_img_content {
+            position: absolute;
+            width: 100%;
+            height: 90%;
+            left: 0;
+            .c__Exhibition_container_img_content_item {
+                height: 100%;
+                float: left;
+                overflow: hidden;
+                img{
+                  width:100%;
+                   height: 100%;
+                }
+            }
+        }
+    }
+
+    .c__Exhibition_btn {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -30px;
+        margin: 0 auto;
+        text-align: center;
+        span {
+            display: inline-block;
+            background-color: rgb(211, 211, 211);
+            margin: 5px;
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        span.active {
+            background-color: rgba(0, 0, 0, 0.63);
+        }
+    }
+}
+
+@media all and(max-width:1220px) {
+    .c__Exhibition {
+        .c__Exhibition_container_text_content {
+            width: 90%;
+            .c__Exhibition_container_text {
+                h1 {
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        .c__Exhibition_container_img_container {
+            .c__Exhibition_container_img_content {
+                .c__Exhibition_container_img_content_item {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+@media all and(max-width:576px){
+    .c__Exhibition {
+        text-align: center;
+        .c__Exhibition_container_img_container {
+            .c__Exhibition_container_img_content {
+                .c__Exhibition_container_img_content_item {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

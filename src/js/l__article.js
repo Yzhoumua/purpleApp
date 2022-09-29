@@ -1,0 +1,1 @@
+import "../assets/l__article/l__article.less"

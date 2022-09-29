@@ -1,0 +1,81 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+div,h1,h2,h3,h4,h5,span,ul,li,nav,a,button,input,lable,form,header,footer,p,textarea{
+  transition: all 0.5s cubic-bezier(0.91, 0.23, 0.24, 0.98);
+}
+.Fcolor{
+  background: #352961;
+}
+// @value xl:(min-width:1200px);
+// @value lg:(min-width:992px);
+// @value md:(min-width:768px);
+// @value sm:(min-width:576px);
+.clearFix::after{
+  clear: both;
+  content: "";
+  display: inline-block;
+}
+.w_100{
+  width: 100%;
+}
+.h_100{
+  height:100%
+}
+// 分散居中对齐
+.flexCenter{
+  justify-content: space-around;
+  align-items: center;
+}
+.flex{
+  display: flex;
+}
+// 分撒两端对齐
+.flexCenterEnds{
+  justify-content: space-between;
+  align-items: center;
+}
+// 定位左边
+.posttionLf{
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+// 定位上边
+.posttionTop{
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+// 定位右边
+.posttionRg{
+  position: absolute;
+  right:0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+// 定位下边
+.posttionBom{
+  position: absolute;
+  left:0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+}
+// 图片自适应
+.img-fluid{
+  height:auto;
+  max-width:100%;
+}
